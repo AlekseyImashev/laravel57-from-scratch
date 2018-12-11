@@ -10,7 +10,12 @@
 			<label class="label" for="title">Project Title</label>
 
 			<div class="control">
-				<input type="text" class="input {{ $errors->has('title') ? 'is-danger' : '' }}" name="title" value="{{ old('title') }}">
+				<input 
+					type="text" 
+					class="input {{ $errors->has('title') ? 'is-danger' : '' }}" 
+					name="title" 
+					value="{{ old('title') }}"
+				>
 			</div>
 		</div>
 
@@ -18,7 +23,10 @@
 			<label class="label" for="title">Project Description</label>
 
 			<div class="control">
-				<textarea name="description" class="textarea {{ $errors->has('description') ? 'is-danger' : '' }}">{{ old('description') }}</textarea>
+				<textarea 
+					name="description" 
+					class="textarea {{ $errors->has('description') ? 'is-danger' : '' }}"
+				>{{ old('description') }}</textarea>
 			</div>
 		</div>
 
